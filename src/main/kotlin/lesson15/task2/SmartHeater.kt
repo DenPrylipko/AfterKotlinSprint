@@ -6,7 +6,7 @@ const val MAX_TEMPERATURE = 30
 class SmartHeater(
     id: Int,
     name: String,
-    var temperature: Int = 16,
+    private var temperature: Int = 16,
 ) : SmartDevice(id, name) {
 
     fun setTemperature(temp: Int) {

@@ -6,8 +6,8 @@ const val MAX_BRIGHTNESS_PERCENTAGE = 100
 class SmartLight(
     id: Int,
     name: String,
-    var brightnessPercentage: Int = 100,
-    var mode: String = "Casual mode",
+    private var brightnessPercentage: Int = 100,
+    private var mode: String = "Casual mode",
 ) : SmartDevice(id, name) {
 
     fun setBrightness(percent: Int) {
